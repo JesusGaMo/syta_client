@@ -54,7 +54,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
                 const SizedBox(height: 10.0),
                 const Text(
-                  'Añade tu número de teléfono. Te enviaremos un código de verificación vía SMS.',
+                  'Ingresa tu número de teléfono con el que se te registro tu cuenta previamente.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 16.0,

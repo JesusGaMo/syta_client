@@ -70,7 +70,7 @@ class _OtpScreenState extends State<OtpScreen> {
                         ),
                         const SizedBox(height: 10),
                         const Text(
-                          "Ingresa el código enviado a tu número de teléfono",
+                          "Ingresa el código con el que se registro tu cuenta",
                           style: TextStyle(
                             fontSize: 14,
                             color: Colors.black38,
@@ -118,7 +118,7 @@ class _OtpScreenState extends State<OtpScreen> {
                           ),
                         ),
                         const SizedBox(height: 20),
-                        const Text(
+                        /*const Text(
                           "¿No recibiste ningún código?",
                           style: TextStyle(
                             fontSize: 14,
@@ -134,7 +134,7 @@ class _OtpScreenState extends State<OtpScreen> {
                             fontWeight: FontWeight.bold,
                             color: Theme.of(context).colorScheme.primary,
                           ),
-                        ),
+                        ),*/
                       ],
                     ),
                   ),

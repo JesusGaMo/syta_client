@@ -61,8 +61,36 @@ class _InspectionScreenState extends State<InspectionScreen> {
                   style: TextStyle(
                     fontSize: 20, // Tamaño del título
                     fontWeight: FontWeight.bold, // Negrita para un aspecto de título
-
                   ),
+                ),
+                IconButton(onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+          title: Text("Lista de actualizaciones"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                "En este apartado se veran todas las actualizaciones relacionadas con su vehiculo, asi como tambie se le brindaran los detalles de cada una de estas actualizaciones, asi como tambien si se tiene alguna dificultad relacionado a este.",
+                style: TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
+          actions: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('Cerrar'),
+            ),
+          ],
+        );
+                    },
+                  );
+                },
+                    icon: Icon(Icons.info_outline),
                 ),
 
               ],

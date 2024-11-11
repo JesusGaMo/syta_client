@@ -159,6 +159,7 @@ class _LocationsScreen extends State<LocationsScreen> {
                     String locationAvaliable = locationData['availability'];
                     String locationAddress   = locationData['address'];
                     String locationPhone     = locationData['phoneNumber'];
+                    String locationSchedule  = locationData['schedule'];
                     double screenWidth       = MediaQuery.of(context).size.width;
 
                     return Center(
@@ -182,23 +183,31 @@ class _LocationsScreen extends State<LocationsScreen> {
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                          Text(
-                                            locationName,
-                                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                                            textAlign: TextAlign.left,
-                                          ),
-                                          Text(
-                                            locationPhone,
-                                            style: TextStyle(fontSize: 14),
-                                            textAlign: TextAlign.left,
-                                          ),
-                                      Text(
-                                        locationAddress,
-                                        softWrap: true,
-                                        style: TextStyle(fontSize: 12),
-                                        textAlign: TextAlign.left,
-                                      ),
-                                    ],
+                                  Text(
+                                    locationName,
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                  Text(
+                                    locationPhone,
+                                    style: TextStyle(fontSize: 14),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                  Text(
+                                    locationAddress,
+                                    softWrap: true,
+                                    style: TextStyle(fontSize: 12),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                  Text(
+                                    locationSchedule,
+                                    softWrap: true,
+                                    style: TextStyle(fontSize: 12),
+                                    textAlign: TextAlign.left,
+                                  ),
+                                ],
                                   ),
                                 )
                             ),
